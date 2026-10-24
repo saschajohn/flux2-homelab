@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
       - name: Setup Flux CLI
-        uses: fluxcd/flux2/action@main
+        uses: fluxcd/flux2/action@43f97c3727b191816301336ef34ac33961b9782a # main
       - name: Setup Flux Schema CLI
-        uses: fluxcd/flux-schema/actions/setup@main
+        uses: fluxcd/flux-schema/actions/setup@4c71b2098ba84b738d811877463f5a2b2bfe443f # main
       - name: Validate manifests
-        uses: fluxcd/flux-schema/actions/validate@main
+        uses: fluxcd/flux-schema/actions/validate@4c71b2098ba84b738d811877463f5a2b2bfe443f # main
         with:
           path: '.'
           config: '.fluxschema.yml'
