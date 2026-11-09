@@ -26,7 +26,7 @@ spec:
   chart:
     spec:
       chart: coroot-operator
-      version: "0.9.x"
+      version: "0.10.x"
       sourceRef:
         kind: HelmRepository
         name: coroot
